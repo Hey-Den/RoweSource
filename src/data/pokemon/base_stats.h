@@ -5517,7 +5517,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_SYNCHRONIZE, ABILITY_SYNCHRONIZE},
+        .abilities = {ABILITY_SELF_HEAL, ABILITY_SELF_HEAL},
         .abilityHidden = ABILITY_INNER_FOCUS,
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
@@ -15920,7 +15920,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_WATER_3,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_DEFEATIST, ABILITY_NONE},
+            .abilities = {ABILITY_AIR_CURRENT, ABILITY_NONE},
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
@@ -15931,10 +15931,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_ARCHEOPS] =
     {
         .baseHP        = 75,
-        .baseAttack    = 140,
+        .baseAttack    = 120,
         .baseDefense   = 65,
         .baseSpeed     = 110,
-        .baseSpAttack  = 112,
+        .baseSpAttack  = 60,
         .baseSpDefense = 65,
         .type1 = TYPE_ROCK,
         .type2 = TYPE_FLYING,
@@ -15948,7 +15948,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FLYING,
         .eggGroup2 = EGG_GROUP_WATER_3,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_DEFEATIST, ABILITY_NONE},
+            .abilities = {ABILITY_AIR_CURRENT, ABILITY_NONE},
         #else
             .abilities = {ABILITY_NONE, ABILITY_NONE},
         #endif
